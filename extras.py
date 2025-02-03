@@ -25,7 +25,7 @@ def max_sum(int_list:list) -> int:
 
     for num in int_list[1:]:
         # atualiza a contagem local do maior subarray
-        max_local = max(num,max_local + num)
+        max_local = max(num,max_local + num)   # algoritmo de Kedane
 
         # substitui o max global se encontrar um subarray local maior
         if max_local > max_global:
